@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.mouse0w0'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:29.0-jre'
+    compile 'org.apache.commons:commons-lang3:3.10'
+    compile 'commons-io:commons-io:2.6'
+    compile 'com.google.code.gson:gson:2.8.6'
+    compile 'org.ow2.asm:asm-commons:7.3.1'
+    compile 'org.slf4j:slf4j-api:1.7.25'
+
+    testImplementation 'org.slf4j:slf4j-simple:1.7.25'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+}
